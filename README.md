@@ -7,6 +7,8 @@ Pour utiliser l'application, commencez par télécharger le dépôt GitHub. Voic
 - Cliquez sur le bouton vert **Code**, puis sur **Download ZIP**.
 - Une fois le téléchargement terminé, **décompressez l'archive ZIP** dans un dossier de votre choix sur votre ordinateur.
 
+[Cliquez ici pour télécharger `Whisper_App.exe` et le dossier `models/` sur Google Drive](https://drive.google.com/drive/folders/1QqlQ-lBjxx_0ZkSs6bj53vG2yLmy3fqv)
+
 ## 2. Organisation des fichiers
 Pour que l'application fonctionne correctement, assurez-vous que votre dossier est organisé comme suit :
 
