@@ -7,7 +7,7 @@ Pour utiliser l'application, commencez par télécharger le dépôt GitHub. Voic
 - Cliquez sur le bouton vert **Code**, puis sur **Download ZIP**.
 - Une fois le téléchargement terminé, **décompressez l'archive ZIP** dans un dossier de votre choix sur votre ordinateur.
 
-[Cliquez ici pour télécharger `Whisper_App.exe` sur Google Drive](https://drive.google.com/drive/folders/1QqlQ-lBjxx_0ZkSs6bj53vG2yLmy3fqv)
+[Cliquez ici pour télécharger `Whisper_App.exe` sur Google Drive](https://drive.google.com/file/d/1ex8Y1h1wlVRBy5Zid6ETFGmlHwXN9-R4/view?usp=drive_link)
 
 ## 2. Organisation des fichiers
 Pour que l'application fonctionne correctement, assurez-vous que votre dossier est organisé comme suit :
@@ -41,6 +41,4 @@ Pour que l'application fonctionne correctement, assurez-vous que votre dossier e
 
 5. **Transcriptions** :
    - Les fichiers transcrits seront sauvegardés dans le dossier `transcriptions` qui sera automatiquement créé à côté de l'exécutable.
-
-N'hésitez pas à suivre ces instructions étape par étape, et tout devrait bien fonctionner pour vous permettre de transcrire vos fichiers audio facilement.
 
