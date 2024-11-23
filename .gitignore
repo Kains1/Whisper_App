@@ -1,2 +1,3 @@
 models/
 *.pt
+!models/README.md
