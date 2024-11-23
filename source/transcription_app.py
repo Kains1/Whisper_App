@@ -46,12 +46,19 @@ def transcrire_audio(dossier_transcriptions, modele, langue, fichiers, callback=
         if callback:
             callback(f"Transcription en cours : {os.path.basename(fichier)}")
         try:
-            result = model.transcribe(fichier, language=langue)
+            result = model.transcribe(fichier, language=langue, task="transcribe")
             fichier_texte = os.path.splitext(os.path.basename(fichier))[0] + ".txt"
             chemin_transcription = os.path.join(dossier_transcriptions, fichier_texte)
 
             with open(chemin_transcription, "w", encoding="utf-8") as f:
-                f.write(result["text"])
+                for segment in result["segments"]:
+                    start = segment["start"]
+                    end = segment["end"]
+                    text = segment["text"]
+                    # Format horodatage : hh:mm:ss
+                    start_time = f"{int(start // 3600):02}:{int((start % 3600) // 60):02}:{int(start % 60):02}"
+                    end_time = f"{int(end // 3600):02}:{int((end % 3600) // 60):02}:{int(end % 60):02}"
+                    f.write(f"[{start_time} - {end_time}] {text}\n")
 
             if callback:
                 callback(f"✅ Transcription terminée pour : {os.path.basename(fichier)}")
@@ -61,6 +68,7 @@ def transcrire_audio(dossier_transcriptions, modele, langue, fichiers, callback=
 
     if callback:
         callback(f"📁 Toutes les transcriptions sont sauvegardées dans : {dossier_transcriptions}")
+
 
 
 class TranscriptionThread(QThread):
