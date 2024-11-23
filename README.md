@@ -20,7 +20,7 @@ Pour télécharger directement l'exécutable précompilé, utilisez le lien suiv
 L'application Whisper nécessite des modèles pré-entraînés pour fonctionner. Vous pouvez les obtenir de deux façons :
 
 OPTION 1 : Télécharger depuis Google Drive
-    - Rendez-vous sur le lien suivant : https://drive.google.com/drive/folders/1RCqBgtcg_dw6Hbhca59ufit_4QOXk94X?usp=drive_link
+    - Rendez-vous sur le lien suivant : [Models sur Google Drive](https://drive.google.com/drive/folders/1RCqBgtcg_dw6Hbhca59ufit_4QOXk94X?usp=drive_link)
     - Téléchargez les fichiers suivants :
         - tiny.pt
         - base.pt
@@ -54,7 +54,7 @@ Whisper_Transcript/
 │   ├── transcription_app.py
 ├── examples/
 ├── resources/
-└── README
+├── README
 
 4. Utilisation de l'application
 -------------------------------
