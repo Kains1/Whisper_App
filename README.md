@@ -111,6 +111,34 @@ Le choix du modèle dépend de vos besoins : si vous avez besoin d'une transcrip
 
 ---
 
+## Activer l'accélération GPU (CUDA)
+
+Si votre ordinateur est équipé d'une **carte graphique NVIDIA**, vous pouvez bénéficier de l'accélération matérielle via **CUDA** pour accélérer considérablement les transcriptions avec Whisper App.
+
+### Étapes pour activer CUDA avec PyTorch
+
+1. **Vérifiez la compatibilité CUDA de votre GPU**  
+   Consultez la liste officielle ici :  
+     [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
+
+2. **Installez les derniers pilotes NVIDIA**  
+   Téléchargez les drivers appropriés pour votre carte graphique :  
+     [https://www.nvidia.fr/Download/index.aspx](https://www.nvidia.fr/Download/index.aspx)
+
+3. **Installez PyTorch avec le support CUDA**  
+   Rendez-vous sur la page d'installation :  
+     [https://pytorch.org/get-started/locally](https://pytorch.org/get-started/locally)  
+   Sélectionnez les options suivantes :
+   - **OS** : Windows  
+   - **Package** : pip  
+   - **Language** : Python  
+   - **Compute Platform** : CUDA (choisissez **11.8** si vous avez une GeForce GTX 1060, 1650, etc.)
+
+   Ou installez directement via cette commande recommandée :
+   ```bash
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+---
 ## Résultats de test
 
 L’application a été testée à partir de l'enregistrement de l’appel du 18 juin du général de Gaulle (version diffusée le 22 juin), en utilisant deux modèles différents afin de comparer leur précision. L’évaluation a été réalisée avec la bibliothèque Jiwer, permettant une analyse fine entre la transcription de référence et celle générée par Whisper.
