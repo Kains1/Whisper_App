@@ -1,6 +1,7 @@
 # Guide d'installation et d'utilisation de Whisper App
 
 Whisper App utilise **Whisper**, un modèle d'OpenAI pour la transcription audio. Voici comment installer et configurer l'application, ainsi que deux méthodes pour obtenir les modèles nécessaires.
+Cette application a été réalisée avec l'aide du tutoriel écrit par le CNRS a destination des chercheurs en sciences humaines qui réalisent des entretiens **_[CNRS Tutoriel][1]_**.
 
 > *L'application a été testée sur un ordinateur équipé d’un Intel Core i5-9300H, de 16 Go de RAM et d’un GPU NVIDIA GeForce GTX 1650.  
 > Les performances peuvent varier selon la configuration de votre machine.*
@@ -141,7 +142,7 @@ Si votre ordinateur est équipé d'une **carte graphique NVIDIA**, vous pouvez b
 ---
 ## Résultats de test
 
-L’application a été testée à partir de l'enregistrement de l’appel du 18 juin du général de Gaulle (version diffusée le 22 juin), en utilisant deux modèles différents afin de comparer leur précision. L’évaluation a été réalisée avec la bibliothèque Jiwer, permettant une analyse fine entre la transcription de référence et celle générée par Whisper.
+L’application a été testée à partir de l'enregistrement de l’appel du 18 juin du général de Gaulle (version diffusée le 22 juin), en utilisant deux modèles différents afin de comparer leur précision. L’évaluation a été réalisée avec la bibliothèque Jiwer **_[Morris et al., 2004][2]_**, permettant une analyse fine entre la transcription de référence et celle générée par Whisper.
 Le discours comporte 1 191 mots pour une durée totale d’environ 5 minutes et 50 secondes, ce qui constitue un bon support pour mesurer les performances de transcription automatique.
 
 ### Résultat avec le modèle `tiny.pt`
@@ -180,3 +181,11 @@ Dans le cadre d’entretiens contenant des informations confidentielles ou sensi
 - Aucune donnée audio ou texte n’est envoyée en ligne.  
 - L’intégralité du traitement est réalisée **en local**, sur la machine de l’utilisateur.  
 - Aucun transfert vers des services cloud ou des tiers n’est effectué, assurant ainsi la **conformité RGPD** et la confidentialité des échanges.
+- 
+
+
+## Réferences 
+
+[1] CNRS. *[Tutorial] Whisper pour retranscrire des entretiens.* https://www.css.cnrs.fr/fr/whisper-pour-retranscrire-des-entretiens/
+
+[2] Andrew C. Morris, Viktoria Maier, and Phil Green. *From WER and RIL to MER and WIL: improved evaluation measures for connected speech recognition*. In Proceedings of Interspeech 2004. DOI: [10.21437/Interspeech.2004-668](https://doi.org/10.21437/Interspeech.2004-668)
