@@ -58,11 +58,8 @@ Pour que l'application fonctionne correctement, assurez-vous que votre dossier e
 
 ```
 WHISPER_APP/
-├── build/
-├── dist/
 ├── examples/
 ├── models/
-│   ├── mistral/
 │   ├── base.pt
 │   ├── small.pt
 │   ├── tiny.pt
@@ -70,11 +67,8 @@ WHISPER_APP/
 ├── resources/
 ├── source/
 ├── transcriptions/
-├── .gitignore
 ├── LICENSE
 ├── README.md
-├── transcription_app_cpu.exe
-├── transcription_app_cpu.spec
 ```
 
 ---
